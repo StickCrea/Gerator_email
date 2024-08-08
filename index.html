@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Emails</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin: 15px 0 5px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        p {
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Generador de Emails</h1>
+    <form id="emailForm">
+        <label for="nombre_completo">Nombre Completo:</label>
+        <input type="text" id="nombre_completo" required>
+
+        <label for="empresa">Nombre de la Empresa:</label>
+        <input type="text" id="empresa" required>
+
+        <label for="dominio">Dominio (.com, .co, etc.):</label>
+        <input type="text" id="dominio" required>
+
+        <button type="submit">Generar Email</button>
+    </form>
+
+    <p id="resultado"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
